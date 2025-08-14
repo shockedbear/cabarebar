@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Oswald:wght@300&display=swap');
+
+
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-allura: 'Allura', sans-serif;
+  --font-eb-garamond: 'EB Garamond', serif;
+  --font-passions-conflict: 'Passions Conflict', cursive;
+  --font-inter: 'Inter', sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
+  --font-cactus-classical: 'Cactus Classical Serif', serif;
+  --font-oswald: 'Oswald', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #121212;
+  scroll-behavior: smooth;
+}
+.mask-fade-all {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 70%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 70%,
+    transparent 100%
+  );
 }
