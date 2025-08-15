@@ -15,7 +15,7 @@ export const MENU: IMenuItem[] = [
     },
      {
         name: "Бар",
-        href: '/'
+        href: '/bar'
     },
      {
         name: "Меню",
@@ -28,7 +28,7 @@ export const MENU: IMenuItem[] = [
 
     },
     {
-        name: "Труппа",
+        name: "О нас",
         href: '/',
 
     },

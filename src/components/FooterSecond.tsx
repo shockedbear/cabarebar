@@ -5,7 +5,7 @@ export function FooterSecond() {
         <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-20">
             <div className="w-full lg:max-w-5xl  mx-auto">
             <div className="mx-6 flex flex-col justify-center items-center ">
-                <span className=" text-[#F0C471]    text-md lg:text-xl font-serif">
+                <span className=" text-[#F0C471]    text-sm lg:text-xl font-serif">
                     МЮЗИКЛ | Ресторан - кабаре бар | Псков
                 </span>
                  <ul className="space-y-1 mt-5 text-white font-eb-garamond text-sm lg:text-lg">
@@ -24,18 +24,18 @@ export function FooterSecond() {
                         <li>Шоу Программа</li>
                     </ul>
                 </div>
-                <div className="flex flex-col items-center justify-center mt-10 lg:mx-6 ">
+                <div className="flex flex-col items-center justify-center mt-5 lg:mt-10 lg:mx-6 ">
                     <span className=" text-[#F0C471]  font-['EB_Garamond']   text-xl ">
                         Контакты
                     </span>
-                    <ul className="space-y-1 mt-3 lg:mt-5    text-white font-['EB_Garamond'] flex flex-col items-center">
+                    <ul className="space-y-1 mt-2 lg:mt-4    text-white font-['EB_Garamond'] flex flex-col items-center">
                         <li>+7 (900) 636-13-22</li>
                         <li>@cabarete_bar</li>
                         <li>Советская 53/15, Псков</li>
                     </ul>
                 </div>
                 <div className="flex flex-col items-end lg:mx-6 absolute lg:static">
-                    <div className="space-y-2">
+                    <div className="space-y-4">
                         <div className="cursor-pointer">
                             <Image src='/images/wha.png' alt="img" width={50} height={50}/>
                         </div>

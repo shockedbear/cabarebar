@@ -39,7 +39,7 @@ export function SectionAbout() {
   className="hidden lg:flex items-end justify-end h-full"
 >
   <Image 
-    src="/images/333.png" 
+    src="/images/cx.png" 
     width={400} 
     height={400} 
     alt="img" 

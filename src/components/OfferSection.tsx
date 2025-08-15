@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "./ui/Button"
+
 
 export function OfferSection() {
     return(
@@ -7,15 +7,11 @@ export function OfferSection() {
             <div className="mx-5">
                 <div className="flex flex-col  items-center">
                     <h1 className="text-center text-white text-5xl lg:text-6xl    mb-10 font-cactus-classical">МЕРОПРИЯТИЯ</h1>
-                    <p className="text-white text-center mb-5">Чтобы заказать шоу-программу на ваше мероприятие, пожалуйста, предоставьте дополнительные детали, 
-такие как ваши контактные данные, 
-дата и ожидаемое количество гостей. 
-Это поможет нам подготовить наилучшее предложение 
-и обсудить детали вашего заказа. </p>
+                    <p className="text-white text-center mb-5">Наше кабаре — идеальное место для банкетов, корпоративов и праздников с шоу.
+Роскошная атмосфера, изысканная кухня и профессиональные артисты создают уникальный вечер для вас и ваших гостей.
+Позвоните или напишите в мессенджер, и мы поможем организовать событие вашей мечты, где каждая деталь будет продумана до совершенства.</p>
                     <Image alt="img" width={400} height={500} src='/images/2w2.png'/>
-                    <div className="mt-10 ">
-                        <Button>Заказать мероприятие</Button>
-                    </div>
+                    
                  </div>
             </div>
         </div>

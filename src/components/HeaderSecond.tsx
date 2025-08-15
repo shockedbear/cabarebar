@@ -1,5 +1,5 @@
 'use client'
-
+import Image from "next/image";
 import { MenuItem } from "./MenuItem"
 import { MENU } from "@/data/menu.data";
 import Link from "next/link";
@@ -8,7 +8,6 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 export function HeaderSecond() {
   const [isOpen, setIsOpen] = useState(false);
-
 
   useEffect(() => {
     if (isOpen) {
@@ -31,7 +30,7 @@ export function HeaderSecond() {
   return (
     <header className="max-w-5xl mx-auto w-full relative z-50">
       {/* Верхняя панель */}
-      <div className="flex justify-between items-center gap-10 lg:p-6 p-6 pb-0  lg:border-b-2 border-red-800">
+      <div className="flex justify-between items-center gap-10 lg:p-6 p-6 pb-0 lg:border-b-2 border-red-800">
         <Link href={'/'}>
           <div className="text-red-600 text-4xl font-normal font-['Allura']">musical</div>
         </Link>
@@ -57,33 +56,52 @@ export function HeaderSecond() {
         </button>
       </div>
 
+      {/* Оверлей, чтобы закрывать панель при клике */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/30 z-40"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       {/* Выезжающее меню */}
       <div
         className={`fixed top-0 right-0 h-full w-50 bg-[#121212] shadow-lg transform transition-transform duration-300 z-50 
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex justify-end items-center pt-3 pr-3">
-          <button className="text-white font-['EB_Garamond']" onClick={() => setIsOpen(false)}>
+        <div className="flex justify-end items-center pt-5 pr-5">
+          <button className="text-white text-3xl font-['EB_Garamond']" onClick={() => setIsOpen(false)}>
             <HiOutlineX />
           </button>
         </div>
 
-        <nav className="flex flex-col gap-2 p-3">
+        <nav className="flex flex-col gap-2 p-3 font-['EB_Garamond'] text-md">
           {MENU.map((item) => (
             <Link
               key={item.name}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="text-white  hover:text-gray-400 transition-colors"
+              className="text-white hover:text-gray-400 transition-colors"
             >
               {item.name}
             </Link>
           ))}
         </nav>
 
-        <div className="p-6 text-white font-['EB_Garamond']">
+        <div className="p-3 text-white text-center font-['EB_Garamond']">
           +7 (900) 636-13-22
         </div>
+         <div className="flex flex-row items-center justify-center gap-4">
+  <div className="cursor-pointer">
+    <Image src='/images/wha.png' alt="img" width={35} height={35}/>
+  </div>
+  <div className="cursor-pointer">
+    <Image src='/images/vk.png' alt="img" width={35} height={35}/>
+  </div>
+  <div className="cursor-pointer">
+    <Image src='/images/tg.png' alt="img" width={35} height={35}/>
+  </div>
+</div>
       </div>
     </header>
   );
