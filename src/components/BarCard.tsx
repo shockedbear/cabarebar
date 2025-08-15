@@ -9,7 +9,7 @@ export function BarCard({ img }: BarCardProps) {
     <div>
       <Image src={img} alt="img" width={500} height={500} data-aos="zoom-in"
      data-aos-anchor-placement="top-bottom"
-     data-aos-duration="2000"
+     data-aos-duration="1500"
  />
     </div>
   );

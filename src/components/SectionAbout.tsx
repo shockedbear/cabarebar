@@ -28,7 +28,7 @@ export function SectionAbout() {
           
           <div className="mt-5 flex justify-center lg:justify-center">
             <Link href={'/afisha'}>
-              <Button>Купить билет</Button>
+              <Button>Смотреть афишу</Button>
             </Link>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default function AfishaCard({img, title, description, date, price}: Props
                 height={500} 
                 data-aos="zoom-in"
                 data-aos-anchor-placement="top-bottom"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
             />
              {isOpenModal && <Modal onClose={() => setIsOpenModal(false)}> 
                     <div className="grid grid-cols-1 lg:grid-cols-2 justify-center ">

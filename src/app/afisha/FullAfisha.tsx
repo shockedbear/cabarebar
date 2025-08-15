@@ -16,7 +16,7 @@ export default function FullAfisha() {
                     <div className="mx-5">
                         <h1  data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2000" className="text-center text-white text-6xl    mb-10 font-cactus-classical ">АФИША</h1>
+          data-aos-duration="1500" className="text-center text-white text-6xl    mb-10 font-cactus-classical ">АФИША</h1>
                         <div className="grid grid-cols-2 lg:grid-cols-3  justify-center gap-y-8 gap-5 lg:gap-10">
                         {
                             EVENTSINFOALL.map((item) => (
