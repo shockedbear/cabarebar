@@ -1,5 +1,5 @@
 "use client"
-import AfishaCard from "./AfishaCard";
+import { AfishaCard } from "./AfishaCard";
 import { EVENTSINFOALL } from "@/data/events.all.data";
 import { Button } from "./ui/Button";
 import Link from "next/link";

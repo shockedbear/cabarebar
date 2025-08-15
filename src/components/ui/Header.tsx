@@ -1,12 +1,12 @@
 'use client'
 import Image from "next/image";
-import { MenuItem } from "./MenuItem"
-import { MENU } from "@/data/menu.data";
+import { MenuItem } from "./MenuItem";
+import { MENU } from "@/config/pages.config";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
-export function HeaderSecond() {
+export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export function HeaderSecond() {
       {/* Верхняя панель */}
       <div className="flex justify-between items-center gap-10 lg:p-6 p-6 pb-0 lg:border-b-2 border-red-800">
         <Link href={'/'}>
-          <div className="text-red-600 text-4xl font-normal font-['Allura']">musical</div>
+          <div className="text-red-600 text-4xl font-normal font-['Allura']">cabare&bar</div>
         </Link>
 
         {/* Меню для больших экранов */}
@@ -93,13 +93,13 @@ export function HeaderSecond() {
         </div>
          <div className="flex flex-row items-center justify-center gap-4">
   <div className="cursor-pointer">
-    <Image src='/images/wha.png' alt="img" width={35} height={35}/>
+    <Image src='/images/icons/wa.png' alt="img" width={35} height={35}/>
   </div>
   <div className="cursor-pointer">
-    <Image src='/images/vk.png' alt="img" width={35} height={35}/>
+    <Image src='/images/icons/vk.png' alt="img" width={35} height={35}/>
   </div>
   <div className="cursor-pointer">
-    <Image src='/images/tg.png' alt="img" width={35} height={35}/>
+    <Image src='/images/icons/tg.png' alt="img" width={35} height={35}/>
   </div>
 </div>
       </div>

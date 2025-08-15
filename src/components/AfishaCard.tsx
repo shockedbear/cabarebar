@@ -9,7 +9,7 @@ import { Button } from "./ui/Button"
 
 import { PropsEvent } from "@/data/events.all.data"
 
-export default function AfishaCard({img, title, description, date, price}: PropsEvent) {
+export function AfishaCard({img, title, description, date, price}: PropsEvent) {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
 

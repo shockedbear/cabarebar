@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IMenuItem } from "@/data/menu.data";
+import { IMenuItem } from "@/config/pages.config";
 
 interface MenuItemProps extends IMenuItem {
   onClick?: () => void;
@@ -7,7 +7,7 @@ interface MenuItemProps extends IMenuItem {
 
 export function MenuItem({ name, href, onClick }: MenuItemProps) {
   return (
-    <Link href={href} className="text-white font-['EB_Garamond']" onClick={onClick}>
+    <Link href={href} className="text-white font-['EB_Garamond'] hover:text-[#F0C471] transition-colors" onClick={onClick}>
       {name}
     </Link>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export function FooterSecond() {
+export function Footer() {
     return(
         <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-20">
             <div className="w-full lg:max-w-5xl  mx-auto">
@@ -17,11 +17,12 @@ export function FooterSecond() {
             <div className="grid  grid-cols-1 lg:grid-cols-3 justify-center items-center lg:mx-6">
                 <div className="hidden lg:flex">
                     <ul className="text-white font-['EB_Garamond']  text-sm lg:text-lg space-y-1 ">
-                        <li>О нас</li>
-                        <li>Меню</li>
-                        <li>Бар</li>
+                        <li>Главная</li>
                         <li>Афиша</li>
-                        <li>Шоу Программа</li>
+                        <li>Бар</li>
+                        <li>Меню</li>
+                        <li>Галерея</li>
+                        <li>О нас</li>
                     </ul>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-5 lg:mt-10 lg:mx-6 ">
@@ -37,13 +38,13 @@ export function FooterSecond() {
                 <div className="flex flex-col items-end lg:mx-6 absolute lg:static">
                     <div className="space-y-4">
                         <div className="cursor-pointer">
-                            <Image src='/images/wha.png' alt="img" width={50} height={50}/>
+                            <Image src='/images/icons/wa.png' alt="img" width={50} height={50}/>
                         </div>
                         <div className="cursor-pointer">
-                            <Image src='/images/vk.png' alt="img" width={50} height={50}/>
+                            <Image src='/images/icons/vk.png' alt="img" width={50} height={50}/>
                         </div>
                         <div className="cursor-pointer">
-                            <Image src='/images/tg.png' alt="img" width={50} height={50}/>
+                            <Image src='/images/icons/tg.png' alt="img" width={50} height={50}/>
                         </div>
                     </div>
                 </div>

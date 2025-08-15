@@ -17,7 +17,7 @@ export function SectionAbout() {
       <div className="flex flex-col md:flex-row justify-between md:items-center items-center gap-10 mx-6">
         
         <div className="w-[300px] lg:w-[500px]" data-aos='fade-right' data-aos-duration="2000">
-          <Image src='/images/555.png' width={600} height={600} alt="img" />
+          <Image src='/images/main/about2.png' width={600} height={600} alt="img"  />
           
           <div className="text-white text-lg font-extralight font-['EB_Garamond'] mt-5    text-center">
             Первый в Пскове ресторан Мюзикл в стиле Рококо <br />
@@ -39,7 +39,7 @@ export function SectionAbout() {
   className="hidden lg:flex items-end justify-end h-full"
 >
   <Image 
-    src="/images/cx.png" 
+    src="/images/main/about1.png" 
     width={400} 
     height={400} 
     alt="img" 

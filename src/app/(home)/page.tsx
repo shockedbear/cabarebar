@@ -4,7 +4,7 @@ import { SectionAbout } from "@/components/SectionAbout"
 
 
 import { SectionBar } from "@/components/SectionBar"
-import { OfferSection } from "@/components/OfferSection"
+import { SectionOffer } from "@/components/SectionOffer"
 
 export default function Home() {
   return(
@@ -22,7 +22,7 @@ export default function Home() {
 
  
 
-      <OfferSection/>
+      <SectionOffer/>
 
    
  
