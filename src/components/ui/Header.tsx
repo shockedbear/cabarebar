@@ -32,7 +32,7 @@ export function Header() {
       {/* Верхняя панель */}
       <div className="flex justify-between items-center gap-10 lg:p-6 p-6 pb-0 lg:border-b-2 border-red-800">
         <Link href={'/'}>
-          <div className="text-red-600 text-4xl font-normal font-['Allura']">cabare&bar</div>
+         <Image src='/images/main/headerLogo.png' alt="headerLogo" width={150} height={150}/>
         </Link>
 
         {/* Меню для больших экранов */}
@@ -92,9 +92,7 @@ export function Header() {
           +7 (900) 636-13-22
         </div>
          <div className="flex flex-row items-center justify-center gap-4">
-  <div className="cursor-pointer">
-    <Image src='/images/icons/wa.png' alt="img" width={35} height={35}/>
-  </div>
+  
   <div className="cursor-pointer">
     <Image src='/images/icons/vk.png' alt="img" width={35} height={35}/>
   </div>

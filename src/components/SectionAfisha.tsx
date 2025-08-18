@@ -27,10 +27,10 @@ export function SectionAfisha() {
     <div className="max-w-5xl mx-auto mt-20">
       <div className="mx-5">
         <h1
-          data-aos="fade-up"
+          data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="2000"
-          className="text-center text-white text-5xl lg:text-6xl mb-10 font-cactus-classical"
+          className="text-center text-white text-5xl lg:text-6xl mb-5 font-cactus-classical"
         >
           АФИША
         </h1>

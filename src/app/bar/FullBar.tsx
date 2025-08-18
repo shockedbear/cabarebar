@@ -1,20 +1,20 @@
-import { BARDATA } from "@/data/bar.data"
-import { BarCard } from "@/components/BarCard"
+import { BARDATAMAIN } from "@/data/bar.data"
+import { BarCardMain } from "@/components/BarCardMain"
 
 export function FullBar() {
     return(
         <div className="max-w-5xl mx-auto mt-10">
              <div className="mx-6">
-               <h1  data-aos="fade-up"
-                 data-aos-anchor-placement="top-bottom"
-                 data-aos-duration="1500" className="text-center text-white text-5xl lg:text-6xl font-cactus-classical">БАР</h1>
-               <h2  data-aos="fade-up"
-                 data-aos-anchor-placement="top-bottom"
-                 data-aos-duration="1500" className="text-white text-center text-3xl mt-5 mb-10 font-cactus-classical">Авторские коктейли</h2>
+               <h1   data-aos="flip-down"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000" className="text-center text-white text-5xl lg:text-6xl mb-1 font-cactus-classical">БАР</h1>
+               <h2   data-aos="flip-down"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000" className="text-white text-center text-3xl mb-3  font-cactus-classical">Авторские коктейли</h2>
        
-               <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 gap-y-8  lg:gap-10">
-                 {BARDATA.map((item, index) => (
-                   <BarCard key={index} img={item.img} />
+               <div className="flex flex-col justify-center items-center  gap-y-0  lg:gap-0">
+                 {BARDATAMAIN.map((item, index) => (
+                   <BarCardMain key={index} img={item.img} />
                  ))}
                </div>
        

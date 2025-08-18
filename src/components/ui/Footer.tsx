@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Footer() {
     return(
-        <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-20">
+        <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-20 lg:mt-20">
             <div className="w-full lg:max-w-5xl  mx-auto">
             <div className="mx-6 flex flex-col justify-center items-center ">
                 <span className=" text-[#F0C471]    text-sm lg:text-xl font-serif">
@@ -35,16 +35,13 @@ export function Footer() {
                         <li>Советская 53/15, Псков</li>
                     </ul>
                 </div>
-                <div className="flex flex-col items-end lg:mx-6 absolute lg:static">
+                <div className="flex flex-col items-end lg:mx-6 absolute mt-3 lg:static">
                     <div className="space-y-4">
                         <div className="cursor-pointer">
-                            <Image src='/images/icons/wa.png' alt="img" width={50} height={50}/>
+                            <Image src='/images/icons/vk.png' alt="imgVK" width={50} height={50}/>
                         </div>
                         <div className="cursor-pointer">
-                            <Image src='/images/icons/vk.png' alt="img" width={50} height={50}/>
-                        </div>
-                        <div className="cursor-pointer">
-                            <Image src='/images/icons/tg.png' alt="img" width={50} height={50}/>
+                            <Image src='/images/icons/tg.png' alt="imgTG" width={50} height={50}/>
                         </div>
                     </div>
                 </div>

@@ -26,12 +26,12 @@ export function SectionBar() {
   return (
     <div className="max-w-5xl mx-auto mt-20">
       <div className="mx-6">
-        <h1  data-aos="fade-up"
+        <h1  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1500" className="text-center text-white text-5xl lg:text-6xl font-cactus-classical">БАР</h1>
-        <h2  data-aos="fade-up"
+          data-aos-duration="1500" className="text-center text-white text-5xl lg:text-6xl mb-1 font-cactus-classical">БАР</h1>
+        <h2  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1500" className="text-white text-center text-3xl mt-5 mb-10 font-cactus-classical">Авторские коктейли</h2>
+          data-aos-duration="1500" className="text-white text-center text-3xl  mb-3 font-cactus-classical">Авторские коктейли</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
           {BARDATA.slice(0, cardCount).map((item, index) => (

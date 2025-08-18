@@ -49,6 +49,7 @@ export function AfishaCard({img, title, description, date, price}: PropsEvent) {
                                     <span className="text-[#F0C471] text-xl font-eb-garamond">{date}</span>
                                     <p className="text-[#F0C471] text-xl font-eb-garamond">Цена: {price}</p>
                                 </div>
+                                <p className="text-red-600 text-center text-sm mt-5 lg:mt-20">Возврат билетов возможен не позднее, чем за 15 дней до мероприятия.</p>
                             </div>
 
                             <div className="flex justify-center mt-5">
