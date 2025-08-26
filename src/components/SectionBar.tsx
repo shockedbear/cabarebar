@@ -2,11 +2,12 @@
 import { BarCard } from "./BarCard"
 import { BARDATA } from "@/data/bar.data";
 import { Button } from "./ui/Button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 
-export function SectionBar() {
+export default function SectionBar() {
   const [cardCount, setCardCount] = useState(4);
+
 
   useEffect(() => {
     const updateCardCount = () => {
@@ -23,6 +24,10 @@ export function SectionBar() {
     return () => window.removeEventListener("resize", updateCardCount);
   }, []);
 
+   const visibleCards = useMemo(() => {
+    return BARDATA.slice(0, cardCount);
+  }, [cardCount]);
+
   return (
     <div className="max-w-5xl mx-auto mt-20">
       <div className="mx-6">
@@ -34,7 +39,7 @@ export function SectionBar() {
           data-aos-duration="1500" className="text-white text-center text-3xl  mb-3 font-cactus-classical">Авторские коктейли</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
-          {BARDATA.slice(0, cardCount).map((item, index) => (
+        {visibleCards.map((item, index) => (
             <BarCard key={index} img={item.img} />
           ))}
         </div>

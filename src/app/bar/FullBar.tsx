@@ -1,7 +1,11 @@
 import { BARDATAMAIN } from "@/data/bar.data"
 import { BarCardMain } from "@/components/BarCardMain"
+import { useMemo } from "react"
 
 export function FullBar() {
+  const card = useMemo(() => {
+    return BARDATAMAIN
+  }, [])
     return(
         <div className="max-w-5xl mx-auto mt-10">
              <div className="mx-6">
@@ -13,7 +17,7 @@ export function FullBar() {
           data-aos-duration="2000" className="text-white text-center text-3xl mb-3  font-cactus-classical">Авторские коктейли</h2>
        
                <div className="flex flex-col justify-center items-center  gap-y-0  lg:gap-0">
-                 {BARDATAMAIN.map((item, index) => (
+                 {card.map((item, index) => (
                    <BarCardMain key={index} img={item.img} />
                  ))}
                </div>

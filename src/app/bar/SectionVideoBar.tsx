@@ -5,7 +5,7 @@ export function SectionVideoBar() {
         {/* Левое видео */}
         <video 
           src="/video/Bar1.mp4"
-          poster="/video/poster1.png"
+          poster="/video/poster2.png"
           controls
           autoPlay={false}
           muted={false}
@@ -17,7 +17,7 @@ export function SectionVideoBar() {
         <video
            
           src="/video/Bar2.mp4"
-          poster="/video/poster2.png"
+          poster="/video/poster1.png"
           controls
           autoPlay={false}
           muted={false}

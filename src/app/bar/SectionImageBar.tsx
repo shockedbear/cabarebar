@@ -1,13 +1,11 @@
 'use client'
-
+import Image from "next/image";
 import { useState } from "react";
 
 const slides = [
   { type: "image", src: "/images/bar/mainHead.png" },
-    { type: "video", src: "/video/listv1.MP4" },
-  { type: "video", src: "/video/listv2.MP4" },
-  { type: "video", src: "/video/listv3.MP4" }, // пример видео
-  { type: "image", src: "/images/main/list1.jpg" },
+      { type: "image", src: "/images/main/image11.png" },
+
 ];
 
 export function SectionImageBar() {
@@ -34,9 +32,11 @@ export function SectionImageBar() {
               }`}
             >
               {slide.type === "image" ? (
-                <img
+                <Image
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
+                  width={1000}
+                  height={1000}
                   className="w-full h-full object-cover"
                 />
               ) : (

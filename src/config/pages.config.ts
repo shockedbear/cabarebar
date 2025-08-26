@@ -1,36 +1,39 @@
 export type IMenuItem = {
     name: string,
-    href: string
+    href: string,
+
+
 
 }
 
 export const MENU: IMenuItem[] = [
     {
-        name: "Главная",
-        href: '/'
+        name: "О нас",
+        href: '/about',
+        
     },
      {
         name: "Афиша",
         href: '/afisha'
     },
      {
-        name: "Бар",
-        href: '/bar'
+        name: "Шоу",
+        href: '/shoy'
     },
      {
+        name: "Бар",
+        href: '/bar',
+
+    },
+    {
         name: "Меню",
-        href: '/',
+        href: '/menu',
 
     },
     {
         name: "Галерея",
         href: '/gallery',
-
     },
-    {
-        name: "О нас",
-        href: '/',
-
-    },
+   
       
 ]

@@ -1,32 +1,41 @@
-import { SectionAfisha } from "@/components/SectionAfisha"
+'use client'
 
-import { SectionAbout } from "@/components/SectionAbout"
+import dynamic from "next/dynamic";
+import { SectionImage } from "@/components/SectionImage";
+import { SectionAbout } from "@/components/SectionAbout";
 
+// Lazy load для нижних секций
+const SectionAfisha = dynamic(() => import("@/components/SectionAfisha"), {
+  loading: () => <p className="text-white ">Загрузка афиши...</p>,
+  ssr: false
+});
 
-import { SectionBar } from "@/components/SectionBar"
-import { SectionOffer } from "@/components/SectionOffer"
-import { SectionImage } from "@/components/SectionImage"
+const SectionBar = dynamic(() => import("@/components/SectionBar"), {
+  loading: () => <p className="text-white ">Загрузка бара...</p>,
+  ssr: false
+});
+
+const SectionMenu = dynamic(() => import("@/components/SectionMenu"), {
+  loading: () => <p className="text-white ">Загрузка меню...</p>,
+  ssr: false
+});
+
+const SectionOffer = dynamic(() => import("@/components/SectionOffer"), {
+  loading: () => <p className="text-white ">Загрузка мероприятий...</p>,
+});
 
 export default function Home() {
-  return(
+  return (
     <>
-      <SectionImage/>
-      <SectionAbout/>
-      
+      {/* Первые секции грузятся сразу */}
+      <SectionImage />
+      <SectionAbout />
 
-
-      
-      <SectionAfisha/>
-
-
-      <SectionBar/>
-
- 
-
-      <SectionOffer/>
-
-   
- 
+      {/* Нижние секции грузятся лениво */}
+      <SectionAfisha />
+      <SectionBar />
+      <SectionMenu />
+      <SectionOffer />
     </>
-  )
+  );
 }

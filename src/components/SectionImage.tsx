@@ -1,12 +1,9 @@
 'use client'
 
 import { useState } from "react";
-
+import Image from "next/image";
 const slides = [
-  { type: "image", src: "/images/main/MainHead.png" },
-  { type: "image", src: "/images/main/list2.jpg" },
-  { type: "video", src: "/video/listv2.MP4" },
-  { type: "video", src: "/video/listv3.MP4" }, // пример видео
+  { type: "image", src: "/images/main/image11.png" },
   { type: "image", src: "/images/main/list1.jpg" },
 ];
 
@@ -34,11 +31,13 @@ export function SectionImage() {
               }`}
             >
               {slide.type === "image" ? (
-                <img
-                  src={slide.src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
+                <Image
+                                  src={slide.src}
+                                  alt={`Slide ${index + 1}`}
+                                  width={1000}
+                                  height={1000}
+                                  className="w-full h-full object-cover"
+                                />
               ) : (
                 <video
                   src={slide.src}

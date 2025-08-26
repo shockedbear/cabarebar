@@ -1,8 +1,7 @@
 import { FullBar } from "./FullBar";
 import type { Metadata } from "next";
 import { SectionImageBar } from "./SectionImageBar";
-import { SectionVideoBar } from "./SectionVideoBar";
-import { SectionImageBarEnd } from "./SectionImageBarEnd";
+
 
 export const metadata: Metadata = {
   title: "Бар Cabare & Bar Мюзикл — коктейли и атмосфера в Пскове",
@@ -15,6 +14,7 @@ export default function Bar() {
         <SectionImageBar/>
         <FullBar/>
         
+       
         </>
     )
 }

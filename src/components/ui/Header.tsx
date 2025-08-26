@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 export function Header() {
+
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -27,8 +29,9 @@ export function Header() {
     };
   }, [isOpen]);
 
+
   return (
-    <header className="max-w-5xl mx-auto w-full relative z-50">
+    <header className="max-w-5xl mx-auto w-full relative z-50 ">
       {/* Верхняя панель */}
       <div className="flex justify-between items-center gap-10 lg:p-6 p-6 pb-0 lg:border-b-2 border-red-800">
         <Link href={'/'}>
@@ -36,11 +39,18 @@ export function Header() {
         </Link>
 
         {/* Меню для больших экранов */}
-        <nav className="hidden md:flex gap-10 justify-between items-center">
+        <div className="">
+        <nav className="hidden md:flex gap-10 justify-between items-center ">
           {MENU.map((item) => (
-            <MenuItem key={item.name} name={item.name} href={item.href} />
+            
+              <MenuItem key={item.href} name={item.name} href={item.href}  />
+              
+            
           ))}
+          
         </nav>
+        
+      </div>
 
         {/* Телефон */}
         <div className="hidden md:block text-white font-['EB_Garamond']">
@@ -63,7 +73,7 @@ export function Header() {
           onClick={() => setIsOpen(false)}
         />
       )}
-
+      
       {/* Выезжающее меню */}
       <div
         className={`fixed top-0 right-0 h-full w-50 bg-[#121212] shadow-lg transform transition-transform duration-300 z-50 

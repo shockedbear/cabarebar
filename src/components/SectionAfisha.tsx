@@ -3,9 +3,9 @@ import { AfishaCard } from "./AfishaCard";
 import { EVENTSINFOALL } from "@/data/events.all.data";
 import { Button } from "./ui/Button";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
-export function SectionAfisha() {
+export default function SectionAfisha() {
   const [cardCount, setCardCount] = useState(4);
 
   useEffect(() => {
@@ -22,6 +22,9 @@ export function SectionAfisha() {
 
     return () => window.removeEventListener("resize", updateCardCount);
   }, []);
+  const visibleCard = useMemo(() => {
+    return EVENTSINFOALL.slice(0, cardCount)
+  }, [cardCount])
 
   return (
     <div className="max-w-5xl mx-auto mt-20">
@@ -36,7 +39,7 @@ export function SectionAfisha() {
         </h1>
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
-          {EVENTSINFOALL.slice(0, cardCount).map((item) => (
+          {visibleCard.map((item) => (
             <AfishaCard id={item.id} key={item.id} img={item.img} title={item.title} description={item.description} date={item.date} price={item.price} />
           ))}
         </div>
