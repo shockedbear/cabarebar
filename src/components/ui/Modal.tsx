@@ -32,7 +32,7 @@ export default function Modal({ children, onClose }: Props) {
       onClick={handleClose}
     >
       <div
-        className={`relative bg-white dark:bg-zinc-900 rounded-xl shadow-lg max-w-full max-h-full overflow-auto p-6 border border-[#F0C471]
+        className={`relative bg-zinc-900 rounded-xl shadow-lg max-w-full max-h-full overflow-auto p-6 border border-[#F0C471]
           transform transition-all duration-300 ${isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"}`}
         onClick={(e) => e.stopPropagation()}
       >

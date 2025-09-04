@@ -21,13 +21,13 @@ export default function SectionOffer() {
                     <div className="grid grid-cols-2 items-center space-x-5 lg:gap-x-20 text-white font-eb-garamond text-sm lg:text-lg lg:font-semibold">
                         <div className="flex flex-col gap-y-5 lg:gap-y-10 text-left leading-relaxed lg:leading-normal">
                             <p>- Каждые выходные - феерия на сцене!</p>
-                            <p>- Изысканная кухня - достойное дополнение!Здесь стираются границы между сценой и залом.</p>
-                            <p>- Интерьер, дышащий историей!Каждый предмет интерьера - это антикварный артефакт.</p>
+                            <p>- Изысканная кухня - достойное дополнение!<br/>Здесь стираются границы между сценой и залом.</p>
+                            <p>- Интерьер, дышащий историей!<br/>Каждый предмет интерьера - это антикварный артефакт.</p>
                         </div>
                         <div className="flex flex-col gap-y-5 lg:gap-y-10 text-right leading-relaxed lg:leading-normal">
-                            <p>- Камерность, рождающая близость! Здесь стираются границы между сценой и залом.</p>
+                            <p>- Камерность, рождающая близость!<br/>Здесь стираются границы между сценой и залом.</p>
                             <p>- Атмосфера, которую нельзя описать словами!</p>
-                            <p>- По средам - магия слова! Погрузитесь в мир литературы на наших камерных спектаклях.</p>
+                            <p>- По средам - магия слова!<br/> Погрузитесь в мир литературы на наших камерных спектаклях.</p>
                         </div>
                     </div>
                     <h3 className="text-xl lg:text-3xl text-[#D1AC66] font-eb-garamond  font-semibold mt-10 text-center ">“МЮЗИКЛ” - это место,<br/> 

@@ -14,7 +14,7 @@ export function FullShoy() {
                        
                 <div className="hidden lg:block">
                 <div className="mb-20   ">
-                    <Image src='/images/shoy/dashaMain.png' width={1000} height={200} alt="img" className="" />
+                    <Image src='/images/shoy/dashaMain.png' width={1000} height={200} alt="img" className="" priority/>
                 </div>
                     <div className="flex  gap-x-10  mb-20">
                                     <div>
@@ -115,7 +115,7 @@ export function FullShoy() {
                                         />
                                         <div className="flex flex-col items-start  mt-5 gap-2">
                                             <button onClick={() => setClasses(!classes)} className="text-2xl text-[#D1AC66] font-eb-garamond  font-semibold italic hover:text-[#F0C471] transition-colors flex items-center">Классы <HiChevronDown className="w-5 h-5" /></button>
-                                            { classes && (<p className="text-white font-eb-garamond italic text-sm leading-relaxed">- джаз (преподаватель Павел Ивлюшкин, Украина) 2014;- техника Contemporary (преподаватель Кристина Кляйн, Германия ) 2014;-техника Contemporary (преподаватель Martin Forsberg, Швеция) 2014;-техника Liquid Body (преподаватель Бруно Каверна, Бразилия) 2014;-степ (преподаватель Daniel Larsson, Швеция ) 2014;- Contemporary (преподаватель LAURA ARIS ÁLVAREZ, Бельгия) 2014;-техника Gaga (преподаватель Noa Zuk ) 2015;-классы Zebastian Mende Maligna, танцовщика Ultima Vez (Коста-Рика) 2015;-партнеринг (преподаватели Marion Sparber и Nerea Martinez, Германия) 2015;И другие…</p>)}
+                                            { classes && (<p className="text-white font-eb-garamond italic text-sm leading-relaxed">джаз (преподаватель Павел Ивлюшкин, Украина) 2014;- техника Contemporary (преподаватель Кристина Кляйн, Германия ) 2014;-техника Contemporary (преподаватель Martin Forsberg, Швеция) 2014;-техника Liquid Body (преподаватель Бруно Каверна, Бразилия) 2014;-степ (преподаватель Daniel Larsson, Швеция ) 2014;- Contemporary (преподаватель LAURA ARIS ÁLVAREZ, Бельгия) 2014;-техника Gaga (преподаватель Noa Zuk ) 2015;-классы Zebastian Mende Maligna, танцовщика Ultima Vez (Коста-Рика) 2015;-партнеринг (преподаватели Marion Sparber и Nerea Martinez, Германия) 2015;И другие…</p>)}
                                             <button onClick={() => setMyWay(!myWay)} className="text-2xl leading-relaxed text-[#D1AC66] font-eb-garamond  font-semibold italic hover:text-[#F0C471] flex items-center">Путь Дарьи <HiChevronDown className="w-5 h-5" /></button>
                                             { myWay && (<p className="text-white font-eb-garamond italic text-sm ">2016 - 2018 - В городе Сланцы основала театра современного танца «Созвездие» В танцевальный сезон 2017 - 2018 было создано два спектакля - мюзикла «Феерия Мюзикла» по мотивам произведений «Нотр-Дам де Пари», «Чикаго», «Бурлеск».«Моцарт. Рок Опера» по мотивам одноименного произведения. Хореограф - постановщик. Г. Сланцы. С 2020 года - творческий перерыв. С 2025 года - хореограф - постановщик в ресторане «кабаре-бар»</p>)}
                                         </div>
