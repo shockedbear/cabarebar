@@ -3,8 +3,8 @@
 import { useState } from "react"
 import React from "react"
 import Image from "next/image"
-import Modal from "./ui/Modal"
-import { Button } from "./ui/Button"
+import Modal from "./Modal"
+import { Button } from "./Button"
 
 
 import { PropsEvent } from "@/data/events.all.data"

@@ -1,7 +1,7 @@
 'use client'
 
 
-import { AfishaCard } from "@/components/AfishaCard"
+import { AfishaCard } from "@/components/ui/AfishaCard"
 
 import { EVENTSINFOALL } from "@/data/events.all.data"
 import { useMemo } from "react"

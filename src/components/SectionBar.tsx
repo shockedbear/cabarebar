@@ -1,5 +1,5 @@
 "use client"
-import { BarCard } from "./BarCard"
+import { BarCard } from "./ui/BarCard"
 import { BARDATA } from "@/data/bar.data";
 import { Button } from "./ui/Button";
 import { useState, useEffect, useMemo } from "react";
