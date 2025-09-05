@@ -40,7 +40,7 @@ export function SectionAbout() {
     src="/images/main/about1.png" 
     width={400} 
     height={400} 
-    alt="img" 
+    alt="img"
   />
 </div>
 
