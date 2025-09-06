@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { SectionImage } from "@/components/SectionImage";
 import { SectionAbout } from "@/components/SectionAbout";
 
-// Lazy load для нижних секций
+
 const SectionAfisha = dynamic(() => import("@/components/SectionAfisha"), {
   loading: () => <p className="text-white ">Загрузка афиши...</p>,
   ssr: false
@@ -27,11 +27,11 @@ const SectionOffer = dynamic(() => import("@/components/SectionOffer"), {
 export default function Home() {
   return (
     <>
-      {/* Первые секции грузятся сразу */}
+
       <SectionImage />
       <SectionAbout />
 
-      {/* Нижние секции грузятся лениво */}
+   
       <SectionAfisha />
       <SectionBar />
       <SectionMenu />
