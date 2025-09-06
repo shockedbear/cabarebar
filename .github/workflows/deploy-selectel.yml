@@ -1,0 +1,52 @@
+name: Build and Deploy to Selectel
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build
+          # если build не создал ./out, попробуем выполнить next export (если есть скрипт)
+          if [ ! -d ./out ]; then
+            npm run export || echo "no export script or export failed — assuming build produced out/"
+          fi
+
+      - name: Install AWS CLI (apt-get)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      - name: Show aws version
+        run: aws --version
+
+      - name: Sync ./out to Selectel bucket
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SELECTEL_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SELECTEL_SECRET_KEY }}
+          AWS_DEFAULT_REGION: ru-1
+        run: |
+          # проверим что папка out существует
+          if [ ! -d ./out ]; then
+            echo "Error: ./out not found. Build failed or output directory different."
+            exit 1
+          fi
+
+          aws s3 sync ./out s3://${{ secrets.SELECTEL_BUCKET }} \
+            --endpoint-url "${{ secrets.SELECTEL_ENDPOINT }}" \
+            --delete \
+            --acl public-read
