@@ -5,15 +5,15 @@ import { Dasha } from "./Dasha"
 
 
 export function FullAboutSlug() {
-    const {param} = useParams()
-    if (param === 'choreographer') {
+    const {slug} = useParams()
+    if (slug === 'choreographer') {
         return (
             <div>
                 <Dasha/>
             </div>
         )
     }
-    if (param === "director") {
+    if (slug === "director") {
         return (
         <div>
             <h1>Директор</h1>
