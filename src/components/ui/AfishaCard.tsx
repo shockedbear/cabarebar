@@ -29,7 +29,7 @@ export function AfishaCard({img, title, description, date, price}: PropsEvent) {
                  loading="lazy"
             />
              {isOpenModal && <Modal onClose={() => setIsOpenModal(false)}> 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 justify-center ">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center ">
                         <div className="w-[300px]">
                         <Image onClick={handleOpenModal}
                             src={img} 
@@ -50,7 +50,7 @@ export function AfishaCard({img, title, description, date, price}: PropsEvent) {
                                     <span className="text-[#F0C471] text-xl font-eb-garamond">{date}</span>
                                     <p className="text-[#F0C471] text-xl font-eb-garamond">Цена: {price}</p>
                                 </div>
-                                <p className="text-red-600 text-center text-sm mt-5 lg:mt-20">Возврат билетов возможен не позднее, чем за 15 дней до мероприятия.</p>
+                                <p className="text-red-600 text-center text-sm mt-5 lg:mt-15">Возврат билетов возможен не позднее, чем за 15 дней до мероприятия.</p>
                             </div>
 
                             <div className="flex justify-center mt-5">
