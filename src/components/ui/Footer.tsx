@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Footer() {
     return(
-        <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-20 lg:mt-20">
+        <div className="w-full bg-black mx-auto p-6  overflow-hidden mt-10 lg:mt-20">
             <div className="w-full lg:max-w-5xl  mx-auto">
             <div className="mx-6 flex flex-col justify-center items-center ">
                 <span className=" text-[#F0C471]    text-sm lg:text-xl font-serif">
