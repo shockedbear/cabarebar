@@ -104,7 +104,7 @@ export function Dasha() {
                                         />
                     </div>
                     <div>
-                        <h2 className="text-2xl text-[#D1AC66] font-eb-garamond mb-3 font-semibold italic">Выступала на сцене:</h2>
+                        <h2 className="text-2xl text-[#D1AC66] font-eb-garamond mb-2 font-semibold italic">Выступала на сцене:</h2>
                         <p className="text-white font-eb-garamond italic text-sm mb-5">Академия русского балета имени А. Я. ВагановойМузыкальный театр имени Шаляпина (Мюзик Холл)танцовщица праздника Алые Паруса 
 на Дворцовой площади, 2013,2014;
 И другие…</p>
