@@ -19,7 +19,8 @@ export function SectionImage() {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto mt-6 ">
+    <div className="hidden ">
+    <div className="relative w-full max-w-5xl mx-auto mt-6  ">
       <div className="mx-6">
         {/* Слайды */}
         <div className="relative h-64 md:h-96 overflow-hidden rounded-lg">
@@ -90,5 +91,6 @@ export function SectionImage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
