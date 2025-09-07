@@ -1,9 +1,30 @@
-import { FullAboutSlug } from "./FullAboutSlug"
+import { Dasha } from "./Dasha"
 
-export default function AboutSlug({ params }: { params: { slug: string } }) {
-    return(
-        <>
-            <FullAboutSlug params={params}/>
-        </>
+export function generateStaticParams() {
+  return [
+    { slug: "director" },
+    { slug: "choreographer" },
+  ]
+}
+
+export default async function FullAboutSlug({params}: {params: Promise<{ slug: string }>}) {
+  const { slug } = await params
+
+  if (slug === "choreographer") {
+    return (
+      <div>
+        <Dasha />
+      </div>
     )
+  }
+
+  if (slug === "director") {
+    return (
+      <div>
+        <h1>Директор</h1>
+      </div>
+    )
+  }
+
+  return <p>Нет такой страницы</p>
 }
