@@ -47,7 +47,7 @@ export default function SectionAfisha() {
         <div className="flex justify-end mt-5">
           
           <Link href={"/afisha"}>
-            <Button>Смотреть еще</Button>
+            <Button size={0}>Смотреть еще</Button>
           </Link>
         </div>
       </div>

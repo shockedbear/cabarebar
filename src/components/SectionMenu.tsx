@@ -45,7 +45,7 @@ export default function SectionMenu() {
 
         <div className="flex justify-end mt-5">
           <Link href='/bar'>
-            <Button>Смотреть еще</Button>
+            <Button size={0}>Смотреть еще</Button>
           </Link>
         </div>
       </div>

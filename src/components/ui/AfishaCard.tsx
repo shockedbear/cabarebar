@@ -54,7 +54,7 @@ export function AfishaCard({img, title, description, date, price}: PropsEvent) {
                             </div>
 
                             <div className="flex justify-center mt-5">
-                                <Button>Купить билет</Button>
+                                <Button size={2}>Купить билет</Button>
                             </div>
                             </div>
 

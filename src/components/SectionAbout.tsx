@@ -26,7 +26,7 @@ export function SectionAbout() {
           
           <div className="mt-3 flex justify-center lg:justify-center">
             <Link href={'/afisha'}>
-              <Button>Смотреть афишу</Button>
+              <Button size={0}>Смотреть афишу</Button>
             </Link>
           </div>
         </div>
@@ -34,13 +34,14 @@ export function SectionAbout() {
         <div 
   data-aos="fade-left" 
   data-aos-duration="2000" 
-  className="hidden lg:flex items-end justify-end h-full"
+  className="hidden lg:flex items-end justify-end h-full w-[360px]"
 >
   <Image 
     src="/images/main/about1.png" 
     width={400} 
     height={400} 
     alt="img"
+    className="w-full h-auto"
   />
 </div>
 

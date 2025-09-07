@@ -17,7 +17,7 @@ export function AboutCard({img, name, href}:Props) {
             </h2>
             <div className="mt-5 ">
                 <Link href={href}>
-                    <Button>Подробнее</Button>
+                    <Button size={1}>Подробнее</Button>
                 </Link>
             </div>
         </div>
