@@ -63,8 +63,8 @@ export function Director() {
                     data-aos-anchor-placement="center-bottom"
                     data-aos-duration="2000" className="text-center text-white text-4xl    mb-5 font-cactus-classical ">ДИРЕКТОР</h1>
                 <div className="grid grid-cols-2 justify-between items-start mb-5 gap-3">
-                    <div>
-                        <h2 className="text-lg font-semibold font-eb-garamond italic text-[#B00310] text-center">Айвар Валиксович Митровскис </h2>
+                    <div className="mt-2">
+                        <h2 className="text-lg font-semibold font-eb-garamond italic text-[#B00310] text-left leading-5">Айвар Валиксович Митровскис </h2>
                         <hr className="border-[#B00310] mt-1 mb-3"/>
                         <p className="text-[10px] text-white">  Айвар Митровскис — предприниматель, хореограф 
 и культурный деятель. 
