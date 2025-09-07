@@ -13,7 +13,7 @@ export function SectionAbout() {
   }, [])
 
   return (
-    <div className="max-w-5xl mx-auto lg:my-10 mt-5">
+    <div className="max-w-5xl mx-auto lg:my-10 ">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-center gap-10 mx-6">
         
         <div className="w-[340px] lg:w-[500px]" data-aos='fade-right' data-aos-duration="2000">

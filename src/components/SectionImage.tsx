@@ -19,7 +19,7 @@ export function SectionImage() {
   };
 
   return (
-    <div className="hidden ">
+    <div className="">
     <div className="relative w-full max-w-5xl mx-auto mt-6  ">
       <div className="mx-6">
         {/* Слайды */}

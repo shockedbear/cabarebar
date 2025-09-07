@@ -6,22 +6,22 @@ import { SectionAbout } from "@/components/SectionAbout";
 
 
 const SectionAfisha = dynamic(() => import("@/components/SectionAfisha"), {
-  loading: () => <p className="text-white ">Загрузка афиши...</p>,
+  loading: () => <p></p>,
   ssr: false
 });
 
 const SectionBar = dynamic(() => import("@/components/SectionBar"), {
-  loading: () => <p className="text-white ">Загрузка бара...</p>,
+  loading: () => <p></p>,
   ssr: false
 });
 
 const SectionMenu = dynamic(() => import("@/components/SectionMenu"), {
-  loading: () => <p className="text-white ">Загрузка меню...</p>,
+  loading: () => <p></p>,
   ssr: false
 });
 
 const SectionOffer = dynamic(() => import("@/components/SectionOffer"), {
-  loading: () => <p className="text-white ">Загрузка мероприятий...</p>,
+  loading: () => <p></p>,
 });
 
 export default function Home() {
