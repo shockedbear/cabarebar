@@ -1,17 +1,13 @@
 import { Dasha } from "./Dasha"
 
-type Props = {
-    params: {
-        slug: string
-    }
-}
+
 export function generateStaticParams() {
   return [
     { slug: "director" },
     { slug: "choreographer" },
   ]
 }
-export default function AboutSlug({params}:Props) {
+export default function AboutSlug({ params }: { params: { slug: string } }) {
     if (params.slug === 'choreographer') {
         return (
             <div>

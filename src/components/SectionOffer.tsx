@@ -18,7 +18,7 @@ export default function SectionOffer() {
   НАШИ <br/>ПРЕИМУЩЕСТВА:
 </h2>
 
-                    <div className="grid grid-cols-2 items-stretch lg:items-center space-x-5 lg:gap-x-20 text-white font-extralight text-sm ">
+                    <div className="grid grid-cols-2 items-stretch lg:items-center space-x-5 lg:gap-x-20 text-white font-extralight text-sm lg:text-lg">
                         <div className="flex flex-col gap-y-5 lg:gap-y-10 text-left leading-relaxed lg:leading-normal">
                             <p>- Каждые выходные - феерия на сцене!</p>
                             <p>- Изысканная кухня - достойное дополнение!<br/>Здесь стираются границы между сценой и залом.</p>
