@@ -13,17 +13,19 @@ export function Dasha() {
                 <div className="mx-6">
                        
                 <div className="hidden lg:block">
-                <div className="mb-20   ">
+                <div className="mb-10   ">
                     <Image src='/images/shoy/dashaMain.png' width={1000} height={200} alt="img" className="" priority/>
                 </div>
                     <div className="flex  gap-x-10  mb-20">
                                     <div>
-                                        <div className="text-white font-eb-garamond italic text-xl mb-5">
-                                            <h1 className="mb-5 text-3xl">Хореограф - постановщик г.Санкт-Петербург</h1>
-                                            <p>2012-2016 - РГПУ им. А.И.Герцена</p>
+                                        <div className="text-white font-extralight italic text-xl mb-5">
+                                            <h1 className="mb-5 text-3xl  font-eb-garamond">Хореограф - постановщик г.Санкт-Петербург</h1>
+                                            <div className="font-eb-garamond">
+                                            <p >2012-2016 - РГПУ им. А.И.Герцена</p>
 <p>Кафедра &quot;хореографического искусства&quot; - бакалавриат</p>
 <p>2016-2018 - магистратура</p>
 <p>г.Санкт-Петербург</p>
+</div>
 
                                         </div>
                                         <div>
@@ -79,7 +81,7 @@ export function Dasha() {
                             </div>
 
                         </div>
-                        <div className="flex mt-20">
+                        <div className="flex mt-10">
                         <Image src='/images/shoy/dashaend.png' width={1000} height={200} alt="img" />
                     </div>
                     <div >

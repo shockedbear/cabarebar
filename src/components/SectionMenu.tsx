@@ -1,5 +1,5 @@
 "use client"
-import { MenuCard } from "./MenuCard";
+import { MenuCard } from "./ui/MenuCard";
 import { MENUDATA } from "@/data/menu.data";
 import { Button } from "./ui/Button";
 import { useState, useEffect, useMemo } from "react";

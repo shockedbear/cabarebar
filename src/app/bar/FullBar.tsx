@@ -1,5 +1,5 @@
 import { BARDATAMAIN } from "@/data/bar.data"
-import { BarCardMain } from "@/components/BarCardMain"
+import { BarCardMain } from "@/components/ui/BarCardMain"
 import { useMemo } from "react"
 
 export function FullBar() {
