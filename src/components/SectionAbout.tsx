@@ -16,10 +16,10 @@ export function SectionAbout() {
     <div className="max-w-5xl mx-auto lg:my-10 ">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-center gap-10 mx-6">
         
-        <div className="w-[350px] lg:w-[500px]" data-aos='fade-right' data-aos-duration="2000">
+        <div className="w-[340px] lg:w-[500px]" data-aos='fade-right' data-aos-duration="2000">
           <Image src='/images/main/aboutlogo.png' width={600} height={600} alt="img" className="mt-10 lg:mt-0"  />
           
-          <div className="text-white text-lg font-extralight font-['EB_Garamond'] mt-5  text-center">
+          <div className="text-white text-sm  font-extralight  mt-5  text-center">
            Cabaret&Bar Мюзикл — окунитесь в волшебство наших шоу!
 Здесь каждый вечер превращается в спектакль: изысканная кухня, живая музыка и эксклюзивные номера, от которых захватывает дух. Почувствуйте магию Cabaret&Bar — место, где ваши мечты становятся реальностью.
           </div>

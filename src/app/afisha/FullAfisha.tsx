@@ -18,7 +18,7 @@ export default function FullAfisha() {
                     <div className="mx-6">
                         <h1   data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2000" className="text-center text-white text-5xl lg:text-6xl    mb-5 font-cactus-classical ">АФИША</h1>
+          data-aos-duration="2000" className="text-center text-white text-4xl lg:text-6xl    mb-5 font-cactus-classical ">АФИША</h1>
                         <div className="grid grid-cols-2 lg:grid-cols-3  justify-center gap-y-8 gap-5 lg:gap-10">
                         {
                             card.map((item) => (

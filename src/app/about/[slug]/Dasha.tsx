@@ -3,7 +3,7 @@ import { useState } from "react"
 import { HiChevronDown } from "react-icons/hi";
 import Image from "next/image"
 
-export function FullShoy() {
+export function Dasha() {
 
     const [classes, setClasses] = useState(false)
     const [myWay, setMyWay] = useState(false)

@@ -8,6 +8,11 @@ export type IMenuItem = {
 
 export const MENU: IMenuItem[] = [
     {
+        name: "Главная",
+        href: '/',
+        
+    },
+    {
         name: "О нас",
         href: '/about',
         
@@ -16,20 +21,12 @@ export const MENU: IMenuItem[] = [
         name: "Афиша",
         href: '/afisha'
     },
-     {
-        name: "Шоу",
-        href: '/shoy'
-    },
-     {
+    {
         name: "Бар",
         href: '/bar',
 
     },
-    {
-        name: "Меню",
-        href: '/menu',
-
-    },
+    
     {
         name: "Галерея",
         href: '/gallery',
