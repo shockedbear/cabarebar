@@ -5,7 +5,7 @@ import { Dasha } from "./Dasha"
 
 
 export function FullAboutSlug() {
-    const param = useParams()
+    const param = useParams<{ slug: string }>()
     if (param.slug === 'choreographer') {
         return (
             <div>
