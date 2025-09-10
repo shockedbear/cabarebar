@@ -13,11 +13,11 @@ export default async function Booking({params}: {params: Promise<{ id: string }>
   if (!event) return <p>Событие не найдено</p>
 
   return (
-   
-      <span 
+    <div >
+      <span
         data-tc-event-inline={event.dataTcEvent}
         data-tc-token={event.dataTcToken}
       ></span>
-    
+    </div>
   )
 }
