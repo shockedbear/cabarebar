@@ -34,7 +34,7 @@ export default function SectionMenu() {
           data-aos-duration="1500" className="text-center text-white text-4xl lg:text-6xl mb-1 font-cactus-classical">МЕНЮ</h1>
         <h2  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1500" className="text-white text-center text-3xl  mb-3 font-cactus-classical">Популярные блюда</h2>
+          data-aos-duration="1500" className="text-white text-center text-2xl lg:text-3xl   mb-3 font-cactus-classical">Популярные блюда</h2>
 
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
@@ -42,12 +42,13 @@ export default function SectionMenu() {
             <MenuCard key={index} img={item.img} />
           ))}
         </div>
-
+        {/* 
         <div className="flex justify-end mt-5">
           <Link href='/bar'>
             <Button size={0}>Смотреть еще</Button>
           </Link>
         </div>
+        */}
       </div>
     </div>
   )

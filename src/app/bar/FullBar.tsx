@@ -7,7 +7,7 @@ export function FullBar() {
     return BARDATAMAIN
   }, [])
     return(
-        <div className="max-w-5xl mx-auto mt-10">
+        <div className="max-w-5xl mx-auto mt-10 mb-10 lg:mb-20">
              <div className="mx-6">
                <h1   data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"

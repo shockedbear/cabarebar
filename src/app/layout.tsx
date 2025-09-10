@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 import { Header } from "@/components/ui/Header";
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
+       <Script src="https://ticketscloud.com/static/scripts/widget/tcwidget.js"/>
       </body>
     </html>
   );

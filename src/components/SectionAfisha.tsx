@@ -4,6 +4,7 @@ import { EVENTSINFOALL } from "@/data/events.all.data";
 import { Button } from "./ui/Button";
 import Link from "next/link";
 import { useEffect, useState, useMemo } from "react";
+import { BuyTicketsButton } from "./ui/BuyTicketsButton";
 
 export default function SectionAfisha() {
   const [cardCount, setCardCount] = useState(4);
@@ -40,7 +41,7 @@ export default function SectionAfisha() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
           {visibleCard.map((item) => (
-            <AfishaCard id={item.id} key={item.id} img={item.img} title={item.title} description={item.description} date={item.date} price={item.price} />
+            <AfishaCard dataTcEvent={item.dataTcEvent} dataTcToken={item.dataTcToken} id={item.id} key={item.id} img={item.img} title={item.title} description={item.description} date={item.date} price={item.price} />
           ))}
         </div>
 

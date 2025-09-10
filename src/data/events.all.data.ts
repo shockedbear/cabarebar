@@ -5,6 +5,8 @@ export type PropsEvent = {
     description: string,
     price: number,
     date: string,
+    dataTcEvent: string, 
+    dataTcToken: string,
 }
 
 export const EVENTSINFOALL: PropsEvent[] = [
@@ -14,7 +16,9 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Вечер кабаре',
         description: 'Погрузитесь в атмосферу парижской ночи с живой музыкой, танцами и изысканными костюмами.',
         price: 2500,
-        date: '2025-08-20'
+        date: '2025-08-20',
+        dataTcEvent: "68c19087f1f567b1d7d091f8",
+        dataTcToken: "eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjhjMDM0MjAxZTM3MjJlZDM0MzM4ZjQ4In0.iSIxulT2fYCyWpgCGEgLuA2DkQkWH51szZYSu1Y9aE0"
     },
     {
         id: "2",
@@ -22,7 +26,9 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Шоу-балет "Мулен Руж"',
         description: 'Захватывающее представление с элементами бурлеска, акробатики и яркого света.',
         price: 3000,
-        date: '2025-08-22'
+        date: '2025-08-22',
+        dataTcEvent: "",
+        dataTcToken: "",
     },
     {
         id: "3",
@@ -30,7 +36,9 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Ночь джаза и кабаре',
         description: 'Живой оркестр, винтажные костюмы и настоящий дух 20-х годов.',
         price: 2200,
-        date: '2025-08-25'
+        date: '2025-08-25',
+        dataTcEvent: "",
+        dataTcToken: "",
     },
     {
         id: "4",
@@ -38,7 +46,9 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Кабаре "Цвет ночи"',
         description: 'Театральное представление с музыкой, мимикой и световым шоу.',
         price: 2800,
-        date: '2025-08-27'
+        date: '2025-08-27',
+        dataTcEvent: "",
+        dataTcToken: "",
     },
     {
         id: "5",
@@ -46,7 +56,9 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Танцы и шампанское',
         description: 'Лёгкий вечер с выступлениями артистов и бесплатным бокалом шампанского каждому гостю.',
         price: 2000,
-        date: '2025-08-30'
+        date: '2025-08-30',
+        dataTcEvent: "",
+        dataTcToken: "",
     },
     {
         id: "6",
@@ -54,6 +66,8 @@ export const EVENTSINFOALL: PropsEvent[] = [
         title: 'Burlesque Night',
         description: 'Откровенные костюмы, элегантные танцы и атмосфера настоящего бурлеск-клуба.',
         price: 3500,
-        date: '2025-09-01'
+        date: '2025-09-01',
+        dataTcEvent: "",
+        dataTcToken: "",
     },
 ]

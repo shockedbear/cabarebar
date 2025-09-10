@@ -31,6 +31,10 @@ export const MENU: IMenuItem[] = [
         name: "Галерея",
         href: '/gallery',
     },
+     {
+        name: "Частные мероприятия",
+        href: '#offer'
+    },
    
       
 ]

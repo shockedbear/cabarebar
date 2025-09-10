@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function FullGallery() {
   return (
-    <div className="w-screen bg-[#111111] overflow-hidden">
+    <div className="w-screen   overflow-hidden mb-10 lg:mb-20 ">
       <h1
         data-aos="flip-down"    
         data-aos-anchor-placement="center-bottom"

@@ -7,12 +7,12 @@ type About = {
 export const ABOUTDATA: About[] = [
     {
         img: '/images/about/Aivar.jpg',
-        name: 'Директор',
+        name: 'Основатель',
         href: '/about/director'
     },
      {
         img: '/images/about/Dasha.jpg',
-        name: 'Хореограф',
+        name: 'Хореограф-постановщик',
         href: '/about/choreographer'
     }
 ]

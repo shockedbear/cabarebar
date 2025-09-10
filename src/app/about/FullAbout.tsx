@@ -3,7 +3,7 @@ import { ABOUTDATA } from "@/data/about.data"
 
 export function FullAbout(){
     return(
-         <div className="max-w-5xl mx-auto mt-10">
+         <div className="max-w-5xl mx-auto mt-10 mb-10 lg:mb-20">
                             <div className="mx-6">
                                 <h1   data-aos="flip-down"
                   data-aos-anchor-placement="center-bottom"
@@ -11,7 +11,9 @@ export function FullAbout(){
                    <div className="grid grid-cols-1 lg:grid-cols-2  justify-center gap-y-8 gap-5 ">
                         {
                             ABOUTDATA.map((item) => (
-                                <AboutCard key={item.img} img={item.img} name={item.name} href={item.href}/>
+                             
+                                    <AboutCard key={item.img} img={item.img} name={item.name} href={item.href}/>
+                           
                             ))
                         }
 

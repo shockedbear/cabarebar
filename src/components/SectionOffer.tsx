@@ -3,18 +3,18 @@ import Image from "next/image"
 
 export default function SectionOffer() {
     return(
-        <div className="max-w-5xl mx-auto mt-20">
+        <div id="offer" className="max-w-5xl mx-auto mt-20 mb-10 lg:mb-20">
             <div className="mx-6">
                 <div className="flex flex-col  items-center">
                     <h1  className="text-center text-white text-4xl lg:text-6xl    mb-2 font-cactus-classical">ЧАСТНЫЕ МЕРОПРИЯТИЯ</h1>
-                    <p className="text-white text-center font-extralight text-sm  mb-4">Наше кабаре — идеальное место для банкетов, корпоративов и праздников с шоу.
+                    <p className="text-white text-center font-extralight text-sm  mb-6">Наше кабаре — идеальное место для банкетов, корпоративов и праздников с шоу.
 Роскошная атмосфера, изысканная кухня и профессиональные артисты создают уникальный вечер для вас и ваших гостей.
 Позвоните или напишите в мессенджер, и мы поможем организовать событие вашей мечты, где каждая деталь будет продумана до совершенства.</p>
                     <Image alt="img" width={400} height={500} src='/images/main/offer1.png' />
                     
                  </div>
                  <div>
-                    <h2 className="text-4xl lg:text-5xl  font-eb-garamond font-semibold mt-20 mb-10 text-center bg-[linear-gradient(to_right,#F5DB96,#CC9D49,#EFD48F,#CD9B49,#F3DB93,#CF9A4A)] bg-clip-text text-transparent">
+                    <h2 className="text-4xl lg:text-5xl  font-eb-garamond font-semibold mt-15 mb-10 text-center bg-[linear-gradient(to_right,#F5DB96,#CC9D49,#EFD48F,#CD9B49,#F3DB93,#CF9A4A)] bg-clip-text text-transparent">
   НАШИ <br/>ПРЕИМУЩЕСТВА:
 </h2>
 

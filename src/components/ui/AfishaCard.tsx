@@ -4,12 +4,15 @@ import { useState } from "react"
 import React from "react"
 import Image from "next/image"
 import Modal from "./Modal"
-import { Button } from "./Button"
+
 
 
 import { PropsEvent } from "@/data/events.all.data"
+import { Button } from "./Button"
+import Link from "next/link"
 
-export function AfishaCard({img, title, description, date, price}: PropsEvent) {
+
+export function AfishaCard({img, title, description, date, price, id}: PropsEvent) {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
 
@@ -54,7 +57,9 @@ export function AfishaCard({img, title, description, date, price}: PropsEvent) {
                             </div>
 
                             <div className="flex justify-center mt-5">
-                                <Button size={2}>Купить билет</Button>
+                                <a  href={`/afisha/booking/${id}`}>
+                                    <Button size={2}>Купить билет</Button>
+                               </a>
                             </div>
                             </div>
 

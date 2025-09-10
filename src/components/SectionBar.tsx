@@ -36,7 +36,7 @@ export default function SectionBar() {
           data-aos-duration="1500" className="text-center text-white text-4xl lg:text-6xl mb-1 font-cactus-classical">БАР</h1>
         <h2  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1500" className="text-white text-center text-3xl  mb-3 font-cactus-classical">Авторские коктейли</h2>
+          data-aos-duration="1500" className="text-white text-center text-2xl lg:text-3xl  mb-3 font-cactus-classical">Авторские коктейли</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
         {visibleCards.map((item, index) => (
