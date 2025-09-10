@@ -13,7 +13,7 @@ import Link from "next/link"
 import { BuyTicketsButton } from "./BuyTicketsButton"
 
 
-export function AfishaCard({img, title, description, date, price, id}: PropsEvent) {
+export function AfishaCard({img, title, description, date, price, id, dataTcEvent, dataTcToken}: PropsEvent) {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
 
@@ -59,12 +59,12 @@ export function AfishaCard({img, title, description, date, price, id}: PropsEven
                             </div>
 
                             <div className="flex justify-center mt-5">
-                                 <button type="button" className="tc-background-yellow" data-tc-event="68c19087f1f567b1d7d091f8" data-tc-token="eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNjhjMDM0MjAxZTM3MjJlZDM0MzM4ZjQ4In0.iSIxulT2fYCyWpgCGEgLuA2DkQkWH51szZYSu1Y9aE0">Купить билет</button>                        
- : (
+                                {isMobile ?    <BuyTicketsButton dataTcToken={dataTcToken}  dataTcEvent={dataTcEvent}>Купить билет</BuyTicketsButton>                         
+                                 : (
                                     <a  href={`/afisha/booking/${id}`}>
                                     <Button size={2}>Купить билет</Button>
                                </a>
-                                
+                                )}
                                 
                             </div>
                             </div>
