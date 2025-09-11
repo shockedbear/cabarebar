@@ -4,7 +4,7 @@ import { EVENTSINFOALL } from "@/data/events.all.data";
 import { Button } from "./ui/Button";
 import Link from "next/link";
 import { useEffect, useState, useMemo } from "react";
-import { BuyTicketsButton } from "./ui/BuyTicketsButton";
+
 
 export default function SectionAfisha() {
   const [cardCount, setCardCount] = useState(4);

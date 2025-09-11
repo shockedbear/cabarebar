@@ -1,9 +1,9 @@
 "use client"
 import { MenuCard } from "./ui/MenuCard";
 import { MENUDATA } from "@/data/menu.data";
-import { Button } from "./ui/Button";
+
 import { useState, useEffect, useMemo } from "react";
-import Link from "next/link";
+
 
 export default function SectionMenu() {
   const [cardCount, setCardCount] = useState(4);

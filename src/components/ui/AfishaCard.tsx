@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from "react"
+
 import { useState } from "react"
 import React from "react"
 import Image from "next/image"
@@ -9,7 +9,7 @@ import Modal from "./Modal"
 
 import { PropsEvent } from "@/data/events.all.data"
 import { Button } from "./Button"
-import Link from "next/link"
+
 import { BuyTicketsButton } from "./BuyTicketsButton"
 
 
@@ -51,11 +51,10 @@ export function AfishaCard({img, title, description, date, price, id, dataTcEven
                                 <p className="text-white text-lg font-extralight font-['EB_Garamond'] mt-3 px-2 text-center">
                                 {description}
                                 </p>
-                                <div className="flex justify-between items-center mt-5 px-2">
+                                <div className="flex justify-between items-center mt-5 px-2 mb-10">
                                     <span className="text-[#F0C471] text-xl font-eb-garamond">{date}</span>
-                                    <p className="text-[#F0C471] text-xl font-eb-garamond">Цена: {price}</p>
+                                    <p className="text-[#F0C471] text-xl font-eb-garamond ">Цена: {price}</p>
                                 </div>
-                                <p className="text-red-600 text-center text-sm mt-5 lg:mt-15">Возврат билетов возможен не позднее, чем за 15 дней до мероприятия.</p>
                             </div>
 
                             <div className="flex justify-center mt-5">
