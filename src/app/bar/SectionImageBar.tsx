@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const slides = [
-  { type: "image", src: "/images/bar/barM1.jpg" },
+  { type: "image", src: "/images/bar/BarM1.jpg" },
      
 
 ];
