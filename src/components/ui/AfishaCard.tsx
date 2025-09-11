@@ -57,7 +57,7 @@ export function AfishaCard({img, title, description, date, price, id, dataTcEven
                                 </div>
                             </div>
 
-                            <div className="flex justify-center mt-5">
+                            <div className="flex justify-center lg:mt-5">
                                 {isMobile ?    <BuyTicketsButton dataTcToken={dataTcToken}  dataTcEvent={dataTcEvent}>Купить билет</BuyTicketsButton>                         
                                  : (
                                     <a  href={`/afisha/booking/${id}`}>

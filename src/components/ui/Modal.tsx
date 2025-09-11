@@ -1,6 +1,6 @@
 'use client'
 
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 type Props = {
@@ -11,6 +11,11 @@ type Props = {
 export default function Modal({ children, onClose }: Props) {
   const [isVisible, setIsVisible] = useState(false);
 
+   const handleClose = useCallback(() => {
+    setIsVisible(false); 
+    setTimeout(onClose, 300); 
+  },[onClose])
+  
   useEffect(() => {
     setIsVisible(true);
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -20,10 +25,7 @@ export default function Modal({ children, onClose }: Props) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const handleClose = () => {
-    setIsVisible(false); 
-    setTimeout(onClose, 300); 
-  };
+ 
 
   return createPortal(
     <div
