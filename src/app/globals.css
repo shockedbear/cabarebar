@@ -15,7 +15,7 @@
   --font-passions-conflict: 'Passions Conflict', cursive;
   --font-inter: 'Inter', sans-serif;
   --font-roboto-mono: 'Roboto Mono', monospace;
-  --font-cactus-classical: 'Cactus Classical';
+  --font-cactus-classical: 'Cactus Classical Serif', serif;
   --font-oswald: 'Oswald', sans-serif;
 }
 html {
@@ -23,12 +23,9 @@ html {
 }
 
 body {
+    font-family: 'Cactus Classical Serif', serif;
   background: #121212;
   scroll-behavior: smooth;
   
 }
-button[data-tc-event].tc-background-yellow,
-button[data-tc-event].tc-background-red,
-button[data-tc-event].tc-button {
-  all: unset !important;
-}
+

@@ -6,7 +6,7 @@ export default function SectionOffer() {
         <div id="offer" className="max-w-5xl mx-auto mt-20 mb-10 lg:mb-20">
             <div className="mx-6">
                 <div className="flex flex-col  items-center">
-                    <h1  className="text-center text-white text-4xl lg:text-6xl    mb-2 font-cactus-classical">ЧАСТНЫЕ МЕРОПРИЯТИЯ</h1>
+                    <h1  className="text-center text-white text-4xl lg:text-6xl    mb-2 ">ЧАСТНЫЕ МЕРОПРИЯТИЯ</h1>
                     <p className="text-white text-center font-extralight text-sm  mb-6">Наше кабаре — идеальное место для банкетов, корпоративов и праздников с шоу.
 Роскошная атмосфера, изысканная кухня и профессиональные артисты создают уникальный вечер для вас и ваших гостей.
 Позвоните или напишите в мессенджер, и мы поможем организовать событие вашей мечты, где каждая деталь будет продумана до совершенства.</p>
