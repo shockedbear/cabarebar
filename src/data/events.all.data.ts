@@ -38,7 +38,7 @@ export const EVENTSINFOALL: PropsEvent[] = [
         price: "2000-3000",
         date: '2025-08-25',
         dataTcEvent: "",
-        dataTcToken: "",
+        dataTcToken: "1",
     },
     {
         id: "4",
