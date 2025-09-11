@@ -6,6 +6,13 @@ import "./globals.css";
 import { Header } from "@/components/ui/Header";
 
 import { Footer } from "@/components/ui/Footer";
+import { Cactus_Classical_Serif } from 'next/font/google'
+
+const cactus = Cactus_Classical_Serif({
+  subsets: ['latin'],
+  weight: ['400'], 
+  display: 'swap',
+})
 
 
 const geistSans = Geist({
@@ -35,7 +42,7 @@ export default function RootLayout({
         
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cactus.className}
       >
         <Header/>
         {children}
