@@ -27,4 +27,8 @@ body {
   scroll-behavior: smooth;
   
 }
-
+button[data-tc-event].tc-background-yellow,
+button[data-tc-event].tc-background-red,
+button[data-tc-event].tc-button {
+  all: unset !important;
+}

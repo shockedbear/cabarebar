@@ -8,7 +8,36 @@ type ButtonProps = {
 export function BuyTicketsButton({children, dataTcEvent, dataTcToken}:ButtonProps) {
 
     return(
-        <button data-tc-event={dataTcEvent}  data-tc-token={dataTcToken} className= "w-[196px] lg:w-[285px]  py-3  border-2 font-cactus-classical rounded-2xl px-10 lg:px-15 text-sm lg:text-xl hover:bg-red-950 transition-colors duration-150 border-[#F0C471] bg-[#520000] text-[#F0C471] cursor-pointer ">{children}</button>
-    )
+<button
+      data-tc-event={dataTcEvent}
+      data-tc-theme="custom"
+      data-tc-token={dataTcToken}
+      style={{
+        width: "196px",
+        paddingTop: "12px",   // py-3
+        paddingBottom: "12px",
+        paddingLeft: "40px", // px-10
+        paddingRight: "40px",
+        borderWidth: "2px",
+        borderStyle: "solid",
+        borderColor: "#F0C471",
+        borderRadius: "1rem", // rounded-2xl
+        fontFamily: "Cactus Classical, serif",
+        fontSize: "14px", // text-sm
+        lineHeight: "20px",
+        color: "#F0C471",
+        backgroundColor: "#520000",
+        cursor: "pointer",
+        transition: "background-color 150ms",
+      }}
+      onMouseOver={(e) => {
+        (e.currentTarget as HTMLButtonElement).style.backgroundColor = "#3d0000" // hover:bg-red-950
+      }}
+      onMouseOut={(e) => {
+        (e.currentTarget as HTMLButtonElement).style.backgroundColor = "#520000"
+      }}
+    >
+      {children}
+    </button>    )
 
 }
