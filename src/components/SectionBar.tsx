@@ -33,7 +33,7 @@ export default function SectionBar() {
       <div className="mx-6">
         <h1  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1500" className="text-center text-white text-4xl lg:text-6xl mb-1 font-cactus-classical">БАР</h1>
+          data-aos-duration="1500" className="text-center text-white text-4xl lg:text-5xl mb-1 font-cactus-classical">БАР</h1>
         <h2  data-aos="flip-down"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1500" className="text-white text-center text-2xl lg:text-3xl  mb-3 font-cactus-classical">Авторские коктейли</h2>
