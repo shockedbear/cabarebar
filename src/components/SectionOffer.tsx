@@ -10,7 +10,7 @@ export default function SectionOffer() {
                     <p className="text-white text-center font-extralight text-sm  mb-6">Наше кабаре — идеальное место для банкетов, корпоративов и праздников с шоу.
 Роскошная атмосфера, изысканная кухня и профессиональные артисты создают уникальный вечер для вас и ваших гостей.
 Позвоните или напишите в мессенджер, и мы поможем организовать событие вашей мечты, где каждая деталь будет продумана до совершенства.</p>
-                    <Image alt="img" width={400} height={500} src='/images/main/offer1.png' />
+                    <Image alt="img" width={400} height={500} src='/images/main/block6.png' />
                     
                  </div>
                  <div>

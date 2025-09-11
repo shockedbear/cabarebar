@@ -1,5 +1,5 @@
 import { Dasha } from "./Dasha"
-import { Director } from "./Director"
+import { Aivar } from "./Aivar"
 
 export function generateStaticParams() {
   return [
@@ -22,7 +22,7 @@ export default async function FullAboutSlug({params}: {params: Promise<{ slug: s
   if (slug === "director") {
     return (
       <div>
-        <Director/>
+        <Aivar/>
       </div>
     )
   }

@@ -17,7 +17,7 @@ export function SectionAbout() {
       <div className="flex flex-col md:flex-row justify-between md:items-center items-center gap-10 mx-6">
         
         <div className="w-[340px] lg:w-[500px]" data-aos='fade-right' data-aos-duration="2000">
-          <Image src='/images/main/aboutlogo.png' width={600} height={600} alt="img" className="mt-10 lg:mt-0"  />
+          <Image src='/images/main/block2logo1.png' width={600} height={600} alt="img" className="mt-10 lg:mt-0"  />
           
           <div className="text-white text-sm  font-extralight  mt-5  text-center">
            Cabaret&Bar Мюзикл — окунитесь в волшебство наших шоу!
@@ -34,14 +34,14 @@ export function SectionAbout() {
         <div 
   data-aos="fade-left" 
   data-aos-duration="2000" 
-  className="hidden lg:flex items-end justify-end h-full w-[360px]"
+  className="hidden lg:flex items-end justify-end h-full w-[360px] "
 >
   <Image 
-    src="/images/main/about1.png" 
+    src="/images/main/block2img1.jpg" 
     width={400} 
     height={400} 
     alt="img"
-    className="w-full h-auto"
+    className="w-full h-auto rounded-2xl"
   />
 </div>
 

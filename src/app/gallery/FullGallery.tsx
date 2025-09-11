@@ -1,4 +1,4 @@
-import Image from "next/image"
+{/*import Image from "next/image"
 
 export function FullGallery() {
   return (
@@ -12,7 +12,7 @@ export function FullGallery() {
         ГАЛЕРЕЯ
       </h1>
 
-      {/* 📱 Мобильная версия — сетка с сдвигами */}
+      {/* 📱 Мобильная версия — сетка с сдвигами 
       <div className="grid grid-cols-2 gap-x-5 px-4 sm:hidden">
         {[
           "/images/gallery/img1.png",
@@ -38,7 +38,7 @@ export function FullGallery() {
         ))}
       </div>
 
-      {/* 💻 Десктопная версия — абсолютная композиция */}
+ 
       <div className="hidden sm:block relative w-[1440px] h-[2495px] mx-auto">
         <div className="absolute w-[1440px] h-[2495px] top-0 left-0">
           <div className="absolute w-[1440px] h-[1665px] top-[830px] left-0">
@@ -153,3 +153,5 @@ export function FullGallery() {
     </div>
   )
 }
+
+*/}

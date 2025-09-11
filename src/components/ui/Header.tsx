@@ -104,10 +104,10 @@ export function Header() {
          <div className="flex flex-row items-center justify-center gap-4">
   
   <div className="cursor-pointer">
-    <Image src='/images/icons/vk.png' alt="img" width={35} height={35}/>
+    <Image src='/images/icons/vk.svg' alt="img" width={35} height={35}/>
   </div>
   <div className="cursor-pointer">
-    <Image src='/images/icons/tg.png' alt="img" width={35} height={35}/>
+    <Image src='/images/icons/tg.svg' alt="img" width={35} height={35}/>
   </div>
 </div>
       </div>

@@ -1,4 +1,4 @@
-import { FullGallery } from "./FullGallery";
+{/* import { FullGallery } from "./FullGallery";
 
 
 export default function Gallery() {
@@ -9,3 +9,6 @@ export default function Gallery() {
         </>
     )
 }
+
+
+*/}

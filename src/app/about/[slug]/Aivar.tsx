@@ -1,31 +1,31 @@
 import Image from "next/image"
 
-export function Director() {
+export function Aivar() {
     return(
         <div className="max-w-5xl mx-auto mt-10 mb-10 lg:mb-20">
             <div className="mx-6">
                 <div className="hidden lg:block">
                                 <div className="">
-                                    <Image src='/images/about/aivar/Aivar1.jpg'  width={1000} height={200} alt="img" priority/>
+                                    <Image src='/images/about/aivar/AivarM.jpg'  width={1000} height={200} alt="img" priority/>
                                 </div>
 
-                                <div className="grid grid-cols-2 justify-between items-center  gap-10 mb-20">
-                                    <div className="">
+                                <div className="flex  justify-between items-start  gap-20 mb-20">
+                                    <div className="mt-12">
                                         <h1 className="text-5xl text-[#B00310] font-eb-garamond font-semibold italic mb-5">Айвар Валиксович Митровскис</h1>
                                         <p className="text-white font-extralight italic text-lg text-left"> 
 
                 Айвар Митровскис — предприниматель, хореограф и культурный деятель, чья жизнь связана с искусством и поиском новых форм самовыражения. Получив классическое хореографическое образование, он <br/>с юности участвовал во всероссийских и международных конкурсах, выступал на ведущих площадках Европы. Сегодня Айвар соединяет красоту искусства <br/> с предпринимательством, создавая проекты в сфере танца, гастрономии и культуры в Санкт-Петербурге и Пскове. Его работа всегда направлена на то, чтобы вдохновлять людей и делиться атмосферой творчества. </p> 
                                     </div>
 
-                                    <div className="mt-5">
-                                        <Image src='/images/about/aivar/Aivar2.jpg'  width={600} height={200}  alt="img"/>
+                                    <div className="mt-12">
+                                        <Image src='/images/about/aivar/Aivar1.jpg'  width={1300} height={500}  alt="img"/>
                                     </div> 
                                 </div>
 
 
                                 <div className="grid grid-cols-2 justify-between items-center  gap-10 mb-10">
                                     <div >
-                                        <Image  src='/images/about/aivar/Aivar3.jpg'  width={500} height={200} alt="img"  />
+                                        <Image  src='/images/about/aivar/Aivar2.jpg'  width={500} height={200} alt="img"  />
                                     </div>
                                     <div>
                                         <h2 className="text-[#B00310] font-eb-garamond italic text-2xl mb-5 font-semibold text-right">Cabaret&Bar — воплощение мечты</h2>
@@ -51,7 +51,7 @@ export function Director() {
 
 
                                 <div className="">
-                                    <Image src='/images/about/aivar/Aivar4.jpg'  width={1000} height={200} alt="img" priority/>
+                                    <Image src='/images/about/aivar/Aivar3.jpg'  width={1000} height={200} alt="img" priority/>
                                 </div>
                             </div>
             </div>
@@ -61,19 +61,20 @@ export function Director() {
                 <h1 
                     data-aos="flip-down"
                     data-aos-anchor-placement="center-bottom"
-                    data-aos-duration="2000" className="text-center text-white text-4xl    mb-5 font-cactus-classical ">ДИРЕКТОР</h1>
-                <div className="grid grid-cols-2 justify-between items-start mb-5 gap-3">
-                    <div className="mt-4">
+                    data-aos-duration="2000" className="text-center text-white text-4xl    mb-5 font-cactus-classical ">ОСНОВАТЕЛЬ</h1>
+                <div className="flex justify-between items-start mb-5 gap-3">
+                    <div className="">
                         <h2 className="text-lg font-semibold font-eb-garamond italic text-[#B00310] text-left leading-5">Айвар Валиксович Митровскис </h2>
                         <hr className="border-[#B00310] mt-1 mb-3"/>
-                        <p className="text-[10px] text-white">  Айвар Митровскис — предприниматель, хореограф 
+                        <p className="text-[10px] text-white">   Айвар Митровскис — предприниматель, хореограф 
 и культурный деятель. 
 С юности увлечён сценой, 
-участвовал в международных конкурсах и выступал на ведущих площадках Европы.
+участвовал в международных конкурсах и выступал на ведущих площадках Европы. Соединив искусство 
+с предпринимательством, Айвар реализовал проекты в сфере танца, гастрономии и торговли в Санкт-Петербурге и Пскове.
 </p>
                     </div>
                     <div>
-                        <Image src='/images/about/aivar/Aivar2.jpg'  width={1000} height={200} alt="img"/>
+                        <Image src='/images/about/aivar/Aivar1.jpg'  width={1900} height={200} alt="img"/>
                     </div>
                 </div>
 
@@ -86,7 +87,7 @@ export function Director() {
                 </div>
 
                 <div className="mb-5">
-                    <Image src='/images/about/aivar/Aivar2sec.jpg'  width={1000} height={200} alt="img"/>
+                    <Image src='/images/about/aivar/Aivar2.jpg'  width={1000} height={200} alt="img"/>
                 </div>
 
                 <div>
@@ -96,7 +97,7 @@ export function Director() {
                 </div>
 
                 <div>
-                    <Image src='/images/about/aivar/Aivar4.jpg'  width={1000} height={200} alt="img"/>
+                    <Image src='/images/about/aivar/Aivar3.jpg'  width={1000} height={200} alt="img"/>
                 </div>
 
             </div>

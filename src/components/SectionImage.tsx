@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 const slides = [
-  { type: "image", src: "/images/main/image11.png" },
-  { type: "image", src: "/images/main/list1.jpg" },
+  { type: "image", src: "/images/main/block1img1.jpg" },
+  { type: "image", src: "/images/main/block1img2.jpg" },
 ];
 
 export function SectionImage() {

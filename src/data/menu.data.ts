@@ -3,13 +3,13 @@ export type Menu = {
 }
 export const MENUDATA:Menu[] = [
     {
-        img: '/images/menu/img1.png'
+        img: '/images/menu/block5menu1.jpg'
     },
     {
-        img: '/images/menu/img2.png'
+        img: '/images/menu/block5menu2.jpg'
     },
     {
-        img: '/images/menu/img3.png'
+        img: '/images/menu/block5menu3.jpg'
     },
    
 

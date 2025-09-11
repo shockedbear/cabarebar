@@ -14,7 +14,7 @@ export function Dasha() {
                        
                 <div className="hidden lg:block">
                 <div className="mb-10   ">
-                    <Image src='/images/shoy/dashaMain.png' width={1000} height={200} alt="img" className="" priority/>
+                    <Image src='/images/about/dasha/dashaM.jpg' width={1000} height={200} alt="img" className="" priority/>
                 </div>
                     <div className="flex  gap-x-10  mb-20">
                                     <div>
@@ -35,14 +35,14 @@ export function Dasha() {
                                     </div>
                                     <div className="relative w-fit">
                                         <Image
-                                            src="/images/shoy/dasha1.png"
+                                            src="/images/about/dasha/Dasha1.jpg"
                                             width={500}
                                             height={200}
                                             alt="img"
                                             className=""
                                         />
                                         <Image
-                                            src="/images/shoy/dashasmall.png"
+                                            src="/images/about/dasha/Dasha2.jpg"
                                             width={200}
                                             height={200}
                                             alt="img"
@@ -82,7 +82,7 @@ export function Dasha() {
 
                         </div>
                         <div className="flex mt-10">
-                        <Image src='/images/shoy/dashaend.png' width={1000} height={200} alt="img" />
+                        <Image src='/images/about/dasha/Dasha3.jpg' width={1000} height={200} alt="img" />
                     </div>
                     <div >
                 </div>
@@ -96,7 +96,7 @@ export function Dasha() {
                             <p className="text-white font-eb-garamond italic text-sm">2012-2016 - РГПУ им. А.И. Герцена Кафедра «хореографического искусства» - бакалавриат 2016-2018 - магистратура г. Санкт - Петербург </p>
                         </div>
                                 <Image
-                                            src="/images/shoy/dasha2.png"
+                                            src="/images/about/dasha/DashaT1.jpg"
                                             width={165}
                                             height={150}
                                             alt="img"
@@ -109,7 +109,7 @@ export function Dasha() {
 на Дворцовой площади, 2013,2014;
 И другие…</p>
                              <Image
-                                            src="/images/shoy/dashaend.png"
+                                            src="/images/about/dasha/DashaT2.jpg"
                                             width={1000}
                                             height={150}
                                             alt="img"

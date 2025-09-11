@@ -27,10 +27,7 @@ export const MENU: IMenuItem[] = [
 
     },
     
-    {
-        name: "Галерея",
-        href: '/gallery',
-    },
+   
     
    
       

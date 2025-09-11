@@ -3,17 +3,15 @@ export type Bar = {
 }
 export const BARDATA:Bar[] = [
     {
-        img: '/images/bar/kok1.png'
+        img: '/images/bar/block4bar1.jpg'
     },
     {
-         img: '/images/bar/kok2.png'
+         img: '/images/bar/block4bar2.jpg'
     },
     {
-         img: '/images/bar/kok3.png'
+         img: '/images/bar/block4bar3.jpg'
     },
-    {
-        img: '/images/bar/kok4.png'
-    },
+   
 
 
 ]
