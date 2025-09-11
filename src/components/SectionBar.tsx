@@ -40,7 +40,7 @@ export default function SectionBar() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap-5 lg:gap-10">
         {visibleCards.map((item, index) => (
-            <BarCard key={index} img={item.img} />
+            <BarCard key={index} img={item.img}  />
           ))}
         </div>
 
