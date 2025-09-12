@@ -15,7 +15,7 @@ export default function SectionOffer() {
                     
                  </div>
                  <div>
-                    <h2 className="text-4xl lg:text-5xl  font-eb-garamond font-semibold mt-15 mb-10 text-center bg-[linear-gradient(to_right,#F5DB96,#CC9D49,#EFD48F,#CD9B49,#F3DB93,#CF9A4A)] bg-clip-text text-transparent">
+                    <h2 className="text-4xl lg:text-5xl  font-eb-garamond font-semibold mt-6 lg:mt-10 mb-10 text-center bg-[linear-gradient(to_right,#F5DB96,#CC9D49,#EFD48F,#CD9B49,#F3DB93,#CF9A4A)] bg-clip-text text-transparent">
   НАШИ <br/>ПРЕИМУЩЕСТВА:
 </h2>
 
