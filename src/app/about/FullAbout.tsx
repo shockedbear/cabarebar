@@ -7,7 +7,7 @@ export function FullAbout(){
                             <div className="mx-6">
                                 <h1   data-aos="flip-down"
                   data-aos-anchor-placement="center-bottom"
-                  data-aos-duration="2000" className="text-center text-white text-4xl lg:text-5xl    mb-5 font-cactus-classical ">О НАС</h1>
+                  data-aos-duration="2000" className="text-center text-white text-4xl lg:text-6xl    mb-5 font-cactus-classical ">О НАС</h1>
                    <div className="grid grid-cols-1 lg:grid-cols-2  justify-center gap-y-8 gap-5 ">
                         {
                             ABOUTDATA.map((item) => (

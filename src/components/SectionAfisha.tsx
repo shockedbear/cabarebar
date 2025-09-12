@@ -34,7 +34,7 @@ export default function SectionAfisha() {
           data-aos="flip-down"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="2000"
-          className="text-center text-white text-4xl lg:text-5xl mb-5 font-cactus-classical"
+          className="text-center text-white text-4xl lg:text-6xl mb-5 font-cactus-classical"
         >
           АФИША
         </h1>
