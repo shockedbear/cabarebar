@@ -14,7 +14,7 @@ export function Dasha() {
                        
                 <div className="hidden lg:block">
                 <div className="mb-10   ">
-                    <Image src='/images/about/dasha/dashaM.jpg' width={1000} height={200} alt="img" className="" priority/>
+                    <Image src='/images/about/dasha/DashaM.jpg' width={1000} height={200} alt="img" className="" priority/>
                 </div>
                     <div className="flex  gap-x-10  mb-20">
                                     <div>
